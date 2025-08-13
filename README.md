@@ -26,7 +26,7 @@ This project is designed for a fictional car rental service, providing a clean, 
 
 ## 📂 Project Structured 
 
-Car-Rental-Website/
+## Car-Rental-Website/
 │── index.html          # Homepage
 │── about.html          # About page
 │── services.html       # Services page
@@ -44,4 +44,5 @@ Car-Rental-Website/
 │   └── banners/        # Banner images
 │
 └── README.md           # Project documentation
+
 

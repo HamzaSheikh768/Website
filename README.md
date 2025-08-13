@@ -25,3 +25,23 @@ This project is designed for a fictional car rental service, providing a clean, 
 ---
 
 ## 📂 Project Structure
+
+Car-Rental-Website/
+│── index.html          # Homepage
+│── about.html          # About page
+│── services.html       # Services page
+│── cars.html           # Available vehicles listing
+│── booking.html        # Booking form
+│── confirmation.html   # Booking confirmation page
+│── contact.html        # Contact form page
+│
+├── css/
+│   └── style.css       # Main stylesheet
+│
+├── images/
+│   ├── cars/           # Car images
+│   ├── logo.png        # Website logo
+│   └── banners/        # Banner images
+│
+└── README.md           # Project documentation
+

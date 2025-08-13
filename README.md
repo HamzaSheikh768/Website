@@ -24,7 +24,7 @@ This project is designed for a fictional car rental service, providing a clean, 
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structured 
 
 Car-Rental-Website/
 │── index.html          # Homepage

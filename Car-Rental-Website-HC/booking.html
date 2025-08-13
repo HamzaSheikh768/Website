@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - EcoRide</title>
+    <link rel="stylesheet" href="style.css" />
+            <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="nav-links">
+          <h1>Eco<span>Ride</span></h1>
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <!-- <li><a href="booking.html">Book Now</a></li> -->
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+
+  <main class="booking">
+    <h1>Book Your Vehicle</h1>
+    <form id="bookingForm" class="form-card">
+      <div class="row">
+        <label>Full name
+          <input name="name" required>
+        </label>
+        <label>Email
+          <input name="email" type="email" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Phone
+          <input name="phone" required>
+        </label>
+        <label>Vehicle
+          <input name="vehicle" id="vehicleField" placeholder="e.g. City EV Hatch">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Pickup date
+          <input type="date" name="pickup_date" required>
+        </label>
+        <label>Drop-off date
+          <input type="date" name="dropoff_date" required>
+        </label>
+      </div>
+
+      <label>Pickup location
+        <input name="pickup_location" required>
+      </label>
+
+      <label>Additional notes
+        <textarea name="notes" rows="3"></textarea>
+      </label>
+
+      <div class="row space-between">
+        <button class="btn" id="RentalBtn" type="submit"><a href="confirmation.html">Confirm Booking</a></button>
+      </div>
+    </form>
+  </main>
+
+           <!-- footer section -->
+  <footer>
+      <div class="footer">
+        <div class="footer-items">
+          <h4>Quick Links</h4>
+          <a href="index.html"> Home</a>
+          <a href="about.html"> About</a>
+          <a href="vehicles.html"> Vehicles</a>
+          <a href="booking.html"> Book Now</a>
+          <a href="services.html"> Services</a>
+          <a href="contact.html"> Contact us</a>
+        </div>
+        <div class="footer-items">
+          <h4>Business Hours</h4>
+          <div class="business-hours">
+            <h6>Mon - Friday:</h6>
+            <p>09.00 am to 07.00 pm</p>
+          </div>
+          <div class="business-hours">
+            <h6>Saturday:</h6>
+            <p>10.00 am to 05.00 pm</p>
+          </div>
+          <div class="business-hours">
+            <h6>Vacation:</h6>
+            <p>All Sunday is our vacation</p>
+          </div>
+        </div>
+        <div class="links">
+          <h4>Contact Info</h4>
+          <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA, UAE</a>
+          <a href="mailto:carrental@example.com"><i class="fas fa-envelope me-2"></i> carrental@example.com</a>
+          <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+          <a href="tel:+012 345 67890"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+          <div class="main-links">
+            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f text-white"></i></a>
+            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter text-white"></i></a>
+            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram text-white"></i></a>
+            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in text-white"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 EcoRide. All rights reserved.</p>
+        <p>Designed by Sheikh Hamza</p>
+      </div>
+    </footer>
+  </body>
+</html>

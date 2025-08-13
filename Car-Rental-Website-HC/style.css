@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, ui-sans-serif, system-ui, Arial, sans-serif;
+}
+
+/* ================== Navbar Styling  ================== */
+.navbar {
+    background-color: rgb(145, 215, 238);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-links {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links h1 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.nav-links span {
+    color: rgba(0, 92, 135, 0.696);
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.home {
+    font-weight: bold;
+    color: rgb(88, 122, 138);
+}
+
+.nav-links a:hover {
+    color: rgb(88, 122, 138);
+}
+
+/* ======================= Hero Section Styling ======================= */
+.hero {
+    color: #141414;
+    padding: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+span {
+    color: rgba(0, 92, 135, 0.696);
+}
+
+h2 {
+    color: rgba(77, 199, 255, 0.696);
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.image-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.image-container img {
+    width: 65vh;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+/* ======================= About Section Styling ======================= */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+    padding: 90px 90px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1 1 45%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-content {
+    flex: 1 1 50%;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4d30;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: skyblue;
+}
+
+/* ======================= Vehicle Section Styling ======================= */
+.vehicles {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: -30px auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.main-vehicle {
+    color: skyblue;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.vehicle p {
+   font-family:cursive;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.vehicles h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.vehicle h3 {
+    font-size: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #222;
+    margin-bottom: 10px;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+}
+
+.media img{
+  height:150px;
+  width: 95%;
+  object-fit: cover;
+  background-size:cover;
+  background-position:center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-body{
+  padding: 14px;
+}
+
+.card-body h3{
+  margin: 0 0 6px;
+}
+
+.card-actions{
+  display: flex;
+  gap: 8px;
+}
+
+.card-actions a{
+    display: inline-block;
+    background-color: #ff4d30;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-actions a:hover {
+    background-color: skyblue;
+}
+
+.muted{
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+.meta{
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+/* ==================== Service Section styling ==================== */
+.services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 92, 135, 0.50);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#RentalBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ==================== contact section styling ==================== */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 246, 255, 0.3);
+}
+
+.contact-info {
+    padding: 100px 80px;
+}
+
+.contact {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+    padding: 100px 80px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px 15px;
+    border: 2px solid #020202;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transition: border 0.3s;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: skyblue;
+}
+
+.contact-form input:hover, .contact-form textarea:hover {
+    border-color: skyblue;
+    outline: none;
+}
+
+.grid-two h3 {
+    color: skyblue;
+}
+
+/* ==================== confirmation section styling ==================== */
+.container-confirmation {
+    padding: 100px 280px;
+    background-color: #f9f9f9;
+}
+
+.container-confirmation h1 {
+    font-size: 3.5rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.container-confirmation p {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 15px 100px;
+    margin-bottom: 50px;
+}
+
+/* ==================== booking section styling ==================== */
+.booking {
+    padding: 110px 150px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+.row{
+  display:flex;
+  gap:12px
+}
+
+.row label{
+  flex:1
+}
+
+label input,label textarea,label select{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+}
+
+label input:hover,label textarea:hover,label select:hover{
+  border: 2px solid skyblue;
+}
+
+/* ==================== footer section styling ==================== */
+.footer {
+    background-color: rgb(145, 215, 238);
+    color: #fff;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-items {
+    color: black;
+}
+
+.footer-items a {
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    padding: 5px 0;
+    text-decoration: none;
+    line-height: 30px;
+    transition: 0.5s;
+}
+
+.footer-items a:hover {
+    color: rgb(2, 43, 61);
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #222;
+}
+
+.links a {
+    color: #666;
+    text-decoration: none;
+    line-height: 35px;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    color: #3fa2ffe0;
+    transition: 0.5s;
+}
+
+.links h4 {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.main-links {
+    display: flex;
+    gap: 8px;
+}
+
+.main-links a {
+    background: transparent;
+    border: 1px solid #ddd;
+    color: #111;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.business-hours {
+    margin-bottom: 15px;
+}
+
+.business-hours h6 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.business-hours p {
+    font-size: 0.9rem;
+    color: #f4ecec;
+}
+
+/* ===================== footer bottom styling ===================== */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(145, 215, 238);
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        }
+        .about-content {
+            flex: 1 1 100%;
+        }
+    .hero {
+        padding: 100px 0;
+        background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+        }
+    .hero h1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    .hero p {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+    .nav-links ul{
+        display: none;
+        }
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        }
+    .image-container {
+            /* display: none; */
+        padding: 10px;
+        margin: 10px 50px;
+        }
+    .containers {
+        padding: 10px 15px;
+        }
+    .containers p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 20px;
+        }
+    .containers h1 {
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 10px;
+        }
+    .space-box {
+        padding: 185px;
+        }
+    .hero {
+        padding: 100px 0;
+        display: grid;
+        place-items: center;
+        }
+}
+
+@media (max-width:600px){
+    .row{
+       flex-direction:column
+       }
+    .cards{
+       grid-template-columns:1fr
+       }
+    .hero {
+        padding: 100px 0;
+        /* background: url('../images/hero-bg.jpg') no-repeat center center/cover; */
+        }
+    .hero h1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    .hero p {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+    .nav-links {
+        display: none;
+        }
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        }
+    .footer-bottom {
+        text-align: left;
+        padding: 20px 10px;
+        background-color: rgb(145, 215, 238);
+    }
+
+}
+
+@media (max-width: 820px) {
+    .hero {
+        display: grid;
+        place-content: center;
+    }
+}
+
+@media (max-width: 912px) {
+    .containers {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        display: grid;
+        place-content: center;
+    }
+    .image-container {
+        margin: 100px 25px;
+        max-width: 200vh;
+    }
+}    
+
+@media (max-width: 540px){
+    .hero h1, .hero p{
+        color: #020202;
+    }
+    .nav-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .navbar {
+        width: 100vh;
+    }
+    .footer {
+        width: 100vh;
+    }
+    .footer-bottom {
+        width: 100vh;
+    }
+}
+
+@media (max-width: 344px) {
+    .footer-bottom {
+        height: 100vh;
+        text-align: center;
+        padding: 100px 0;
+    }
+}

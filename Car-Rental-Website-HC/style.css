@@ -88,6 +88,7 @@ h2 {
     margin-bottom: 25px;
 }
 
+/*  ================= Image Styling ================= */
 .image-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -98,6 +99,13 @@ h2 {
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(0, 92, 135, 0.696);
+    box-shadow: 0 5px 20px rgba(0, 92, 135, 0.696);
 }
 
 /* ======================= About Section Styling ======================= */
@@ -116,6 +124,7 @@ h2 {
     margin: 0 auto;
 }
 
+/*  ================= Image Styling ================= */
 .about-image {
     flex: 1 1 45%;
 }
@@ -124,6 +133,13 @@ h2 {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(0, 92, 135, 0.696);
+    box-shadow: 0 5px 20px rgba(0, 92, 135, 0.696);
 }
 
 .about-content {
@@ -223,6 +239,14 @@ h2 {
   background-position:center;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.media img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(0, 92, 135, 0.696);
+    box-shadow: 0 5px 20px rgba(0, 92, 135, 0.696);
+    border-radius: 25px;
 }
 
 .card-body{
@@ -365,12 +389,13 @@ h2 {
 }
 
 .contact-form input::placeholder, .contact-form textarea::placeholder {
-    color: skyblue;
+    color: rgb(6, 6, 6);
 }
 
 .contact-form input:hover, .contact-form textarea:hover {
     border-color: skyblue;
     outline: none;
+
 }
 
 .grid-two h3 {
@@ -674,4 +699,5 @@ label input:hover,label textarea:hover,label select:hover{
         text-align: center;
         padding: 100px 0;
     }
+
 }

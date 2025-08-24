@@ -50,11 +50,12 @@ body {
 
 .nav-links a.home {
     font-weight: bold;
-    color: rgb(88, 122, 138);
+    color: rgba(0, 92, 135, 0.696);
 }
 
 .nav-links a:hover {
     color: rgb(88, 122, 138);
+    text-decoration: underline;
 }
 
 /* ======================= Hero Section Styling ======================= */
@@ -67,8 +68,25 @@ body {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 40px;
+    color: #838383f4;
+}
+
+/* =================== Animation ================== */
+.containers, h1 span {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 span {
@@ -78,6 +96,7 @@ span {
 h2 {
     color: rgba(77, 199, 255, 0.696);
     margin-bottom: 20px;
+    padding-left: 6px;
     font-weight: 500;
     text-transform: uppercase;
     
@@ -86,6 +105,9 @@ h2 {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 25px;
+    padding-left: 6px;
+    font-family: popins;
+    color: #6b6b6b;
 }
 
 /*  ================= Image Styling ================= */
@@ -142,14 +164,30 @@ h2 {
     box-shadow: 0 5px 20px rgba(0, 92, 135, 0.696);
 }
 
+/* =============== Animation ================ */
+.about-content, h1 p {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .about-content {
     flex: 1 1 50%;
 }
 
-.about-content h2 {
+.about-content h1 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #222;
+    color: #838383f4;
 }
 
 .about-content p {
@@ -172,13 +210,25 @@ h2 {
 
 .btn:hover {
     background-color: skyblue;
+    transform: scale3d(1.10, 1.10, 1);
 }
 
 /* ======================= Vehicle Section Styling ======================= */
-.vehicles {
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: -30px auto;
+
+/* ================== Animation ================= */
+#vehicles {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container {
@@ -189,19 +239,19 @@ h2 {
 
 .container h1 {
     font-size: 3.5rem;
-    color: #222;
+    color: #838383f4;
     margin-bottom: 15px;
 }
 
 .main-vehicle {
     color: skyblue;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: popins;
     font-size: large;
 }
 
 .vehicle p {
-   font-family:cursive;
+   font-family: poppins;
     color: #666;
     margin-bottom: 20px;
 }
@@ -212,16 +262,10 @@ h2 {
     margin-bottom: 40px;
 }
 
-.vehicles h2 {
-    font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 20px;
-}
-
 .vehicle h3 {
     font-size: 1.5rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #222;
+    color: #133301;
     margin-bottom: 10px;
 
 }
@@ -271,10 +315,12 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+
 }
 
 .card-actions a:hover {
     background-color: skyblue;
+    transform: scale3d(1.10, 1.10, 1);
 }
 
 .muted{
@@ -292,6 +338,22 @@ h2 {
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
+}
+
+/* ================== Animation ================= */
+.services {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section-title {
@@ -363,23 +425,22 @@ h2 {
     box-shadow: 0 0 20px rgba(0, 246, 255, 0.3);
 }
 
-.contact-info {
-    padding: 100px 80px;
+.container h1 {
+    font-size: 3.5rem;
+    color: #838383f4;
+    margin-top: 40px;
 }
 
-.contact {
-    font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 20px;
-    padding: 100px 80px;
+.contact-info {
+    padding: 60px 80px;
 }
 
 .contact-form input, .contact-form textarea {
     padding: 12px 15px;
     border: 2px solid #020202;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    background: skyblue;
+    color: #0a0a0a;
     transition: border 0.3s;
 }
 
@@ -395,12 +456,44 @@ h2 {
 .contact-form input:hover, .contact-form textarea:hover {
     border-color: skyblue;
     outline: none;
-
 }
 
 .grid-two h3 {
     color: skyblue;
 }
+
+.button {
+    display: inline-block;
+    background-color: #ff4d30;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;    
+}
+
+.button:hover {
+    background-color: skyblue;
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+/* ==================== Animation =================== */
+#contain {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ==================== confirmation section styling ==================== */
 .container-confirmation {
@@ -410,7 +503,7 @@ h2 {
 
 .container-confirmation h1 {
     font-size: 3.5rem;
-    color: #222;
+    color: #838383f4;
     margin-bottom: 20px;
 }
 
@@ -421,11 +514,48 @@ h2 {
     margin-bottom: 50px;
 }
 
+.bt {
+    display: inline-block;
+    background-color: #ff4d30;
+    color: #fff;
+    padding: 12px 20px;
+    margin-left: 85px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: skyblue;
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+/* ======================= Animation ====================== */
+.container-confirmation {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ==================== booking section styling ==================== */
 .booking {
     padding: 110px 150px;
-    background-color: #fff;
-    margin: 20px auto;
+}
+
+.booking h1 {
+    font-size: 3.5rem;
+    color: #838383f4;
+    margin-bottom: 20px;
 }
 
 .row{
@@ -446,6 +576,38 @@ label input,label textarea,label select{
 
 label input:hover,label textarea:hover,label select:hover{
   border: 2px solid skyblue;
+  transform: scale3d(1.02, 1.02, 3);
+}
+
+.btns {
+    display: inline-block;
+    background-color: #ff4d30;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btns:hover {
+    background-color: skyblue;
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+/* ================= Animation ================= */
+.booking {
+  animation: fadeSlideIn 1.5s ease;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ==================== footer section styling ==================== */
@@ -699,5 +861,4 @@ label input:hover,label textarea:hover,label select:hover{
         text-align: center;
         padding: 100px 0;
     }
-
 }
